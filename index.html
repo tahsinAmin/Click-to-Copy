@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  #text {
+    user-select: all;
+  }
+</style>
+</head>
+<body>
+
+<p>Click on the quote to copy</p>
+
+<h1 id="text" onclick="myFunction()">You know, from this close</h1>
+
+<script>
+  function myFunction() {
+    document.execCommand("copy");
+    alert("Text copied!");
+  }
+</script>
+
+</body>
+</html>
